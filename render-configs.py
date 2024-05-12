@@ -25,6 +25,7 @@ def resolve_handles(handles):
         if response.status_code == 200:
             did = response.json()["did"]
             dids[handle] = did
+        time.sleep(1)  # Wait before making the next request
     return dids
 
 
