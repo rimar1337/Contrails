@@ -20,7 +20,7 @@ LIST_KEYS = [
 def resolve_handles(handles):
     dids = {}
     for handle in handles:
-        url = f"https://bsky.social/xrpc/com.atproto.identity.resolveHandle?handle={handle}"
+        url = f"https://bskyend-lmao.rileymarsh1337.workers.dev/{handle}"
         response = requests.get(url)
         if response.status_code == 200:
             did = response.json()["did"]
