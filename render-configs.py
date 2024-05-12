@@ -6,6 +6,7 @@ import re
 import sys
 
 import requests
+import time
 
 LIST_ITEM_REGEX = re.compile(r"^- ")
 POST_REGEX = re.compile(r"^.*[\./]bsky\.app/profile/(.+?)/post/([a-z0-9]+)")
